@@ -1,0 +1,453 @@
+@media only screen and (min-width: 1025px) {
+
+    /* Desktop css settings */
+
+    .post-message {
+        text-align: center;
+        background: radial-gradient(darkslategray, darkslateblue);
+        padding: 25px;
+        box-shadow: 5px 10px 20px rgb(56, 56, 56);
+        border-radius: 5px;
+        margin-top: 25px;
+    }
+
+    .message-center {
+        margin-left: 38.5%;
+    }
+
+    .post-timestamp {
+        text-align: right;
+        font-size: x-small;
+        display: inline;
+        float: right;
+    }
+
+    #thumbs-up {
+        background: radial-gradient(darkslategray, darkslateblue);
+        box-shadow: 5px 10px 10px rgb(46, 46, 46);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .post-comments-header {
+       
+        margin-top: 25px;
+    }
+
+    #comment {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .delete-comment {
+        font-size: small;
+        color: firebrick;
+        display: block;
+        float: right;
+    }
+
+    #make-comment {
+        margin-left: 25%;
+        margin-top: 50px;
+
+    }
+
+    .commenter-name {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .edit-button {
+        display: inline;
+        float: right;
+        color: darkorange;
+        text-shadow: 1px black;
+    }
+
+    .post-area {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .button-post {
+        width: 50%;
+    }
+
+    .comment-button {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    .post-comment {
+        text-align: center;
+        background: radial-gradient(darkslategray, darkslateblue);
+        padding: 25px;
+        box-shadow: 5px 10px 20px rgb(56, 56, 56);
+        border-radius: 5px;
+    }
+
+    .gig-header{
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    .delete-button {
+        text-decoration: none;
+        margin-left: 46.8%;
+        margin-top: 100px;
+    }
+
+    .gig-create {
+        width: 35%;
+        margin-top: 1%;
+    }
+
+    .gig-area{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .likes-count {
+        display: inline;
+        margin-left: 25px;
+    }
+
+    .post-likes {
+        display: inline;
+    }
+
+    .welcome-header {
+        color: darkorange;
+        text-shadow: 1px black;
+        margin-bottom: 25px;
+    }
+
+    .poster-name {
+        
+        margin-bottom: 25px;
+        display: inline;
+        
+    }
+
+    .post {
+        text-align: center;
+        display: block;
+        padding: 2%;
+        margin-bottom: 2.5%;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 5px;
+        box-shadow: 5px 10px 20px;
+        background: radial-gradient(darkslategrey, rgb(53, 53, 53));
+    }
+
+    .message {
+        display: block;
+        padding: 2%;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 5px;
+        box-shadow: 5px 10px 20px;
+        background: radial-gradient(darkslategrey, rgb(53, 53, 53));
+    }
+
+    #contact_info {
+        width: 35%;
+        margin-left: 32.5%;
+    }
+
+    html {
+        height: 100%;
+        box-sizing: inherit;
+    }
+
+    body {
+        position: relative;
+        margin: 0;
+        padding-bottom: 7rem;
+        min-height: 100%;
+        background-color: rgb(53,54,58);
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    
+    h1, h2, h3, h4, h5, h6, p, label {
+        color: darkorange;
+        text-shadow: 1px 1px black;
+    }
+
+    .dj {
+        margin-left: 5%;
+        margin-top: 1%;
+        box-shadow: 5px 10px 20px;
+        background-color: darkorange;
+        border-radius: 5px;
+        display: block;
+    }
+    
+    #dj {
+        margin-left: 5%;
+        margin-top: 2%;
+        box-shadow: 5px 10px 20px;
+        background-color: darkorange;
+        border-radius: 5px;
+        
+    }
+    
+    input.index {
+        background-color: whitesmoke
+        
+    }
+    
+    #login-button {
+        background-color: darkorange;
+        margin-left: 18%;
+        width: 65%;
+        margin-top: 3%;
+        margin-bottom: 5%;
+    }
+    
+    h5.index {
+        margin-left: 6.5%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    
+    input.index {
+        width: 65%;
+    }
+    
+    label.index, input.index, a.index {
+        margin-left: 18%;
+    }
+    
+    a.index {
+        margin-left: 33%;
+    }
+    
+    .header {
+        background: radial-gradient(darkslategrey, rgb(53, 53, 53));
+        width: 85%;
+        height: 80px;
+        border-radius: 5px;
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 5px 10px 20px;
+        margin-top: 1%;
+        margin-left: 7.5%;
+    }
+
+    a {
+        color: darkorange;
+        text-shadow: 1px black;
+        text-decoration: underline;
+        font-size: large;
+    }
+
+    #login-block {
+        padding: 2%;
+        width: 30%;
+        margin-left: 35%;
+        border-radius: 5px;
+        box-shadow: 5px 10px 20px;
+    }
+    
+    .footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: .5rem;
+        background-color: darkslategray;
+        text-align: center;
+        
+    }
+    
+    #create-block {
+        display: block;
+        padding: 2%;
+        width: 25%;
+        margin-left: 37.5%;
+        border-radius: 5px;
+        box-shadow: 5px 10px 20px;
+    }
+    
+    #create-button {
+        background-color: darkorange;
+        width: 100%;
+        margin-top: 5%;
+        box-shadow: 5px 10px 20px;
+    }
+    
+    #go-back {
+        margin-left: 65%;
+    }
+
+    h1.profile {
+        margin-left: 38%;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    /* Tablet css settings */
+
+    body {
+        background-color: rgb(53,54,58);
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6, p, label {
+        color: darkorange;
+        text-shadow: 1px 1px black;
+    }
+
+    #dj {
+        margin-left: 5%;
+        margin-top: 3%;
+        box-shadow: 5px 10px 20px;
+        background-color: darkorange;
+        border-radius: 5px;
+    }
+
+    input.index {
+        background-color: whitesmoke
+    }
+
+    #login-button {
+        background-color: darkorange;
+        width: 65%;
+        margin-top: 3%;
+        margin-bottom: 5%;
+    }
+
+    input.index {
+        width: 65%;
+    }
+    
+    input.index {
+        margin-left: 18%;
+    }
+
+    #login-block {
+        text-align: center;
+        padding: 5%;
+        width: 75%;
+        margin-left: 12.5%;
+        border-radius: 5px;
+        box-shadow: 5px 10px 20px;
+        margin-top: 5%;
+    }
+
+    .footer {
+        background-color: darkslategray;
+        padding: 1%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 8%;
+        text-align: center;
+    }
+
+    h1.index, h5.index, label.index {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Mobile css settings */
+
+    html {
+        height: 100%;
+        box-sizing: inherit;
+    }
+
+    body {
+        position: relative;
+        margin: 0;
+        padding-bottom: 7rem;
+        min-height: 100%;
+        background-color: rgb(53,54,58);
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, label {
+        color: darkorange;
+        text-shadow: 1px 1px black;
+        margin-top: 3%;
+    }
+
+    .footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: .5rem;
+        background-color: darkslategray;
+        text-align: center;
+        
+        
+        
+    }
+
+    #dj {
+        margin-left: 5%;
+        margin-top: 5%;
+        box-shadow: 5px 10px 20px;
+        background-color: darkorange;
+        border-radius: 5px;
+    }
+
+    input.index {
+        background-color: whitesmoke
+    }
+
+    #login-button {
+        background-color: darkorange;
+        width: 65%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        box-shadow: 5px 10px 20px;
+    }
+
+    #login-block {
+        padding: 3%;
+        text-align: center;
+    }
+
+    input.index {
+        width: 65%;
+        margin-left: 18%;
+    }
+
+    #create-block {
+        padding: 5%;
+        text-align: center;
+    }
+    
+    #create-button {
+        background-color: darkorange;
+        width: 100%;
+        margin-top: 5%;
+        box-shadow: 5px 10px 20px;
+    }
+    
+    #go-back {
+        display: block;
+        margin-left: 55%;
+        text-decoration: underline;
+        margin-top: 5%;
+        margin-right: 5%;
+        float: right;
+    }
+
+    
+    
+}
+
+

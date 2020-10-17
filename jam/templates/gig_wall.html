@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DjentJam | Welcome</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <header class="header">
+        <a href="/blog">Blog</a>
+        <a href="/gig_wall">Gig Wall</a>
+        <a href="/logout">Logout</a>
+    </header>
+    <img id="dj" src="{% static '/images/dj.png' %}" alt="Dj logo" width="75px" height="75px">
+    <h1 class="gig-header">Post a Gig or scroll down to see a list of open Gigs</h1>
+    <div class="post">
+        <h2>Post your Gig</h2>
+        <form action="/create_gig" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="details">Gig description</label>
+                <textarea class="gig-area form-control" cols="30" rows="3" name="details"
+                    placeholder="Gig details"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="contact_info">Contact Info</label>
+                <input type="text" name="contact_info" id="contact_info" class="form-control"
+                    placeholder="Contact Info">
+            </div>
+            <input class="gig-create btn btn-success" id="java-create" type="submit" value="Create">
+        </form>
+    </div>
+    <div>
+        <table class="table table-bordered table-dark">
+            <tr>
+                <th>Posted by</th>
+                <th>Gig Details</th>
+                <th>Contact Info</th>
+                <th>Delete Gig</th>
+            </tr>
+            {% for gig in gigs %}
+            <tr>
+                <td>{{gig.poster.first_name}} </td>
+                <td>{{gig.details}}</td>
+                <td>{{gig.contact_info}}</td>
+                <td><a href="/delete_gig/{{gig.id}}">Delete</a>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="footer">
+        <p>Copywright @2020 | All rights reserved | Powered by Django 2.2</p>
+    </div>
+
+</body>
+
+</html>
